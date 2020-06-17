@@ -1,0 +1,306 @@
+body{
+  font-family: "Montserrat"
+}
+#title{
+  background-image:linear-gradient(to right,#d92027, black );
+  color: #fff;
+  /* overflow: hidden; */
+
+}
+.container-fluid{
+  padding: 3% 15% 7%;
+}
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+/* navigation-Bar */
+.navbar{
+   padding: 0 0 4.2rem 0;
+}
+.navbar-brand{
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.nav-item{
+  padding: 0 18px;
+}
+.nav-link{
+  font-family: "Montserrat";
+  font-weight:lighter;
+  font-size: 1.2rem;
+}
+/* Download Button */
+
+.download-btn{
+  margin: 5% 3% 5% 0;
+}
+/* Title Image */
+
+.title-image{
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
+}
+@media (max-width:1294px) {
+  .title-image{
+    position: static;
+    transform: rotate(0);
+  }
+  #title{
+    text-align: center;
+
+  }
+
+}
+@media (max-width:1190px) {
+  #title h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+}
+/* features */
+#features{
+  font-family: "Montserrat";
+  padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+
+
+}
+.feature{
+  position: relative;
+  text-align: center;
+  margin: 6rem 0;
+  padding: 0 5%;
+}
+.feature i{
+  color: #d92027;
+  margin: 0 0;
+
+}
+.feature i:hover{
+  color: black;
+}
+.feature h3{
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.feature p{
+
+  font-family: "Ubuntu";
+  color: gray;
+}
+
+
+/* testmonials */
+
+#testimonials{
+  text-align: center;
+
+  background: #d92027;
+  color: white;
+}
+#testimonials h1{
+  font-size: 3rem;
+}
+.testimonial-image{
+  border-radius: 100%;
+  width: 10%;
+  margin: 20px;
+}
+.carousel-item{
+  padding: 7% 15%;
+}
+@media (max-width:1290px) {
+  #testimonials h1{
+    font-weight:600;
+    font-size: 2rem;
+  }
+  .press-logo{
+    width: 30%;
+  }
+
+}
+#press{
+  background: #d92027;
+  text-align: center;
+  padding-bottom: 5%;
+
+}
+
+/* pricing */
+#pricing{
+    text-align: center;
+    padding:100px;
+    background: #fff;
+
+}
+
+#pricing h2{
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+#pricing h3{
+  font-family: "Ubuntu";
+  font-weight: bold;
+}
+.row{
+  margin-top: 50px;
+}
+.card{
+  margin: 2% auto;
+  position: relative;
+  display: block;
+  transition: .5s;
+  overflow: hidden;
+}
+.card span{
+  position: absolute;
+  display: block;
+}
+.card span:nth-child(1){
+  top: 0;
+  left: -100%;
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(90deg ,transparent , black );
+  animation: animate1 1s linear infinite;
+}
+@keyframes animate1 {
+  0%{
+    left: -100%;
+  }
+  50%,100%{
+    left:100%;
+  }
+
+}
+.card span:nth-child(2){
+  top: -100%;
+  right: 0;
+  height: 100%;
+  width: 4px;
+  background: linear-gradient(180deg ,transparent ,black );
+  animation: animate2 1s linear infinite;
+  animation-delay: .2s;
+}
+@keyframes animate2 {
+  0%{
+    top: -100%;
+  }
+  50%,100%{
+    top:100%;
+  }
+
+}
+.card span:nth-child(3){
+  bottom:0;
+  right: -100%;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(270deg ,transparent , black );
+  animation: animate3 1s linear infinite;
+  animation-delay: .5s;
+}
+@keyframes animate3 {
+  0%{
+    right: -100%;
+  }
+  50%,100%{
+    right: 100%;
+  }
+
+}
+.card span:nth-child(4){
+  bottom: -100%;
+  left: 0;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(360deg ,transparent , black );
+  animation: animate4 1s linear infinite;
+  animation-delay: .7s;
+}
+@keyframes animate4 {
+  0%{
+    bottom: -100%;
+  }
+  50%,100%{
+    bottom: 100%;
+  }
+
+}
+
+#cta{
+  text-align: center;
+  background-image:linear-gradient(270deg,#d92027, black );
+  color: white;
+  padding: 7% 15% ;
+
+}
+.span{
+  position: relative;
+  transition: 2;
+  overflow: hidden;
+
+}
+.span span{
+  position: absolute;
+  display: block;
+  mix-blend-mode: multiply;
+}
+.span span:nth-child(1)
+{
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  /* background: linear-gradient(90deg, transparent, gray); */
+  animation: animate1 2s linear infinite;
+
+}
+@keyframes animate1 {
+  0%{
+    left: -100%;
+  }
+  50%, 100%{
+    left: 100%;
+  }
+
+}
+#cta h3{
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 3.5rem;
+
+}
+.btn-cta{
+  margin:3% 1%;
+}
+@media (max-width:1200px) {
+  #cta h3{
+    font-weight: 600;
+    font-size: 2.8rem;
+  }
+
+}
+
+#footer{
+  text-align: center;
+  padding: 7% 15%;
+  background-color: #fff;
+}
+#footer i{
+  font-size: 20px;
+  margin: 2% 8px;
+}
+#footer i:hover{
+  color: #d92027;
+}
